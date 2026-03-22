@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hand Gesture Recognition - ZimeMajesty</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🖐️ Hand Gesture Recognition</h1>
+        <p class="subtitle">Tunjukkan telapak tangan mu zime!</p>
+        
+        <div class="video-container">
+            <video id="video" autoplay playsinline></video>
+            <canvas id="canvas"></canvas>
+        </div>
+        
+        <div class="info">
+            <div class="status">
+                <span class="status-label">Status:</span>
+                <span id="status-text" class="status-value">Menunggu deteksi...</span>
+            </div>
+            <div class="gesture">
+                <span class="gesture-label">Gesture Terdeteksi:</span>
+                <span id="gesture-result" class="gesture-value">-</span>
+            </div>
+        </div>
+        
+        <button id="startBtn" class="btn">Mulai Kamera</button>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils/control_utils.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js"></script>
+    <script src="script.js"></script>
+</body>
+                  </html>
